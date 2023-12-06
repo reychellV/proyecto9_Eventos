@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body{
+    background-color: rgb(0, 174, 255);
+}
+
+.eventos{
+    margin-top: 25px;
+    width: 100%;
+    min-height: 100vh; 
+    justify-content: baseline;
+    align-items: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.encabezado{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin-bottom: 20px;
+    user-select: none;
+}
+
+.icon, .title{
+    margin: 15px;
+}
+
+.icon{
+    padding-top: 11px;
+}
+
+.title{
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: white; 
+}
+
+.icono{
+    height: 50px;
+    width: 50px;
+}
+
+.formulario{
+    width: 400px;
+    height: 220px;
+    display: flex;
+    background-color: rgb(207, 245, 245);
+    justify-content: center;
+    align-items: center;
+    border-radius: 1.5rem;
+    box-shadow: 0px 0px 10px 4px rgb(208, 225, 233);
+    margin-bottom: 50px;
+}
+
+
+input{
+    height: 40px;
+    width: 300px;
+    border-radius: 16px;
+    background-color: white;
+    padding: 10px;
+    margin: 5px;
+    border: none;
+}
+
+#fechaEvento, #nombreEvento{
+    box-shadow:inset 0px 0px 0px 2.5px rgb(0, 174, 255);
+}
+
+#agregar{
+    height: 45px;
+    width: 300px;
+    color: white;   
+    background-color: rgb(0, 174, 255);
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.listaEvento2{
+    width: 150vh;
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+    background-color: rgb(207, 245, 245);
+    justify-content: center;
+    align-items: center;
+    border-radius: 1.5rem;
+    box-shadow: 0px 0px 10px 4px rgb(208, 225, 233);
+}
+
+.evento{
+    height: 100%;
+    width: 100%;
+    box-shadow:inset 0px 0px 0px 2.5px rgb(0, 174, 255);
+    margin: 10px;
+    padding: 30px;
+    border-radius: 1.5rem;
+    display: flex;
+    justify-content: space-around;
+    align-self: center;
+}
+
+.dias{
+    width: 30px;
+    user-select: none;
+}
+
+.diasFaltantes{
+    color: green;
+    font-size: 50px;
+    font-weight: bolder;
+}
+
+.texto{
+    font-size: 30px;
+    user-select: none;
+}
+
+.dias, .nombreEvento, .fechaEvento, .acciones{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    flex-direction: column;
+}
+
+.nombreEvento{
+    font-size: 40px;
+    margin: 0 100px 0 100px;
+    user-select: none;
+    width: 200px;
+    word-wrap: break-word;
+}
+
+.fechaEvento{
+    font-size: 25px;
+    user-select: none;
+}
+
+.eliminar{
+    height: 50%;
+    width: 150px;
+    cursor: pointer;
+    color: rgb(21, 21, 248);
+    background-color: rgb(58, 238, 58);
+    border: none;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 0.5rem;
+}
+
+.eliminar:hover{
+    color: white;
+    background-color: rgb(255, 0, 0);
+}
+

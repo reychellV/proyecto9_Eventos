@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Añadir Eventos</title>
+    <!--CONEXION A LOS ESTILOS EN LA STYLESHEET-->
+    <link rel="stylesheet" href="./css/style.css">
+    <!--ICONO EN ICO-->
+    <link rel="shortcut icon" href="./img/calendario.ico" type="image/x-icon">
+</head>
+<body>
+    <!--CAJA CONTENEDORA PRINCIPAL-->
+    <div class="eventos">
+        <div class="encabezado">
+            <div class="title"><p>Próximos Eventos</p></div>
+            <div class="icon"><img class="icono" src="./img/evento.png" alt="Icono"></div>
+        </div>
+        <!--CAJA QUE CONTIENE EL FORMULARIO-->
+        <div class="formulario">
+            <!--FORMULARIO-->
+            <form>
+                <input type="text" id="nombreEvento" placeholder="Nombre del Evento"><br>
+                <input type="date" id="fechaEvento"><br>
+                <input type="submit" id="agregar" value="Agregar Evento">
+            </form>
+        </div>
+        <!--CAJA QUE CONTIENE LOS EVENTOS-->
+        <div class="listaEvento2" id="listaEventos"></div>
+    </div>
+    <!--CONEXION A LA FUNCIONALIDAD EN LOS SCRIPT-->
+    <script src="./script.js"></script>
+</body>
+</html>
+
